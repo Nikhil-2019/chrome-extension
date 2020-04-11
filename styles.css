@@ -24,11 +24,6 @@ body {
     overflow-x: hidden;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-}
-
 .heading {
     padding: 5px;
     background-color: var(--dark);
@@ -78,7 +73,7 @@ body {
 }
 
 .desc {
-    width: 200px;
+    width: 300px;
     font-size: 15px;
     font-weight: 700;
 }
