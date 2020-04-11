@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+:root {
+    --bg-color: #CCCCCC;
+    --primary: #DDDDDD;
+    --light: #EEEEEE;
+    --secondary: #BBBBBB;
+    --dark: #333333;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +19,9 @@ body {
     width: 100%;
     min-width: 300px;
     text-align: center;
+    background-color: var(--primary);
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .grid {
@@ -19,14 +30,24 @@ body {
 }
 
 .heading {
-    margin: 10px 10px;
     padding: 5px;
-    border-bottom: 1px solid black;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: var(--light);
 }
 
 .brand-img {
-    grid-row: 1;
-    grid-column: 1;
+    padding: 5px;
+    border-radius: 80px;
+    width: 60px;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.brand-name {
+    width: 100px;
 }
 
 .content {
@@ -35,24 +56,37 @@ body {
 
 .outer-card {
     margin: 5px 5px;
-    background: grey;
 }
 
 .inner-card {
-    margin: 2px 5px;
-    background: khaki;
+    margin: 10px 10px;
+    padding: 5px 5px 5px 0px;
+    background: var(--secondary);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px var(--bg-color);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.social-img {
+    max-width: 40px;
+    width: 45px;
+}
+
+.desc {
+    width: 200px;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 button {
     border: none;
-    background: blue;
+    background: var(--light);
     width: 45%;
     padding: 5px;
     border-radius: 2px;
-}
-
-.social-img {
-    max-width: 20%;
-    background: url('./Instagram.svg');
-    background-size: cover;
 }
