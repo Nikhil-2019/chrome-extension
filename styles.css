@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    min-width: 300px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.heading {
+    margin: 10px 10px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.brand-img {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.content {
+    margin: 10px 10px;
+}
+
+.outer-card {
+    margin: 5px 5px;
+    background: grey;
+}
+
+.inner-card {
+    margin: 2px 5px;
+    background: khaki;
+}
+
+button {
+    border: none;
+    background: blue;
+    width: 45%;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.social-img {
+    max-width: 20%;
+    background: url('./Instagram.svg');
+    background-size: cover;
+}
